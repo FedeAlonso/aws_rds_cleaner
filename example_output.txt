@@ -1,0 +1,36 @@
+$ python rds_cleaner.py 
+
+You have the following instances:
+
+ID   DBId                                                        Engine         Status         
+0    post-inst01                                                 postgres       available      
+1    post-inst02                                                 postgres       available      
+2    post-inst03                                                 postgres       available      
+3    mariadb-inst03                                              mariadb        available      
+
+
+Which ones do you want to delete?
+	Comma separated. e.g.: 0,1,2,5
+	'all' to delete all (except ones with 'deleting' status)
+all
+
+
+Deleting Instance: post-inst01
+
+Response:{'DBInstance': {'DBInstanceIdentifier': 'post-inst01', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'postgres', ...
+
+
+Deleting Instance: post-inst02
+
+Response:{'DBInstance': {'DBInstanceIdentifier': 'post-inst02', 'DBInstanceClass': 'db.t4g.large', 'Engine': 'postgres', ...
+
+
+Deleting Instance: post-inst03
+
+Response:{'DBInstance': {'DBInstanceIdentifier': 'post-inst03', 'DBInstanceClass': 'db.r5.4xlarge', 'Engine': 'postgres', ...
+
+
+Deleting Instance: mariadb-inst03
+
+Response:{'DBInstance': {'DBInstanceIdentifier': 'mariadb-inst03', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'mariadb', -...
+
