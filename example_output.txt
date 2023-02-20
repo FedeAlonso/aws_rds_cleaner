@@ -77,7 +77,7 @@ ID   DBId                                                        Engine         
 3    2k-adm-postg                                                postgres       deleting       
 4    2k-dev-mysql                                                mysql          deleting       
 5    2k-rds-postgresq                                            postgres       deleting       
-6    2k-rds-mysql04                                               mysql          deleting       
+6    2k-rds-mysql04                                              mysql          deleting       
 7    jkl                                                         postgres       deleting       
 8    vvv-dev02                                                   postgres       deleting       
 9    rdsinstancetst2                                             postgres       deleting   
