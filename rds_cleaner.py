@@ -15,6 +15,7 @@ def clean_rds_instances_dict(rds_instances_dict):
                 "engine": instance.get('Engine'),
                 "status": instance.get('DBInstanceStatus')
             }
+        count += 1
     return out_instances_dict
 
 
