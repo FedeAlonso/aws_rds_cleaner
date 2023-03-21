@@ -4,16 +4,13 @@ You have the following instances:
 
 
 ID   DBId                                                        Engine         Status         
-0    admin-postg                                                 postgres       available      
-1    admin-pgs                                                   postgres       available      
-2    nnn                                                         postgres       available      
-3    2k-adm-postg                                                postgres       available      
-4    2k-dev-mysql                                                mysql          available      
-5    2k-rds-postgresq                                            postgres       available      
-6    2k-rds-mysql04                                              mysql          available      
-7    jkl                                                         postgres       available      
-8    vvv-dev02                                                   postgres       available      
-9    rdsinstancetst2                                             postgres       deleting       
+0    example-inst0                                               postgres       available      
+1    example-mariaDB-instance-00-dev-team          				 mariadb        available      
+2    example-mariaDB-instance-01-dev-team          				 mariadb        available      
+3    example-mySQL-instance-00-dev-team            				 mysql          available      
+4    example-mySQL-instance-01-dev-team            				 mysql          available      
+5    example-postgres-instance-00-dev-team         				 postgres       backing-up     
+6    example-postgres-instance-01-dev-team         				 postgres       available      
 
 Which ones do you want to delete?
 	Comma separated. e.g.: 0,1,2,5
@@ -21,49 +18,39 @@ Which ones do you want to delete?
 all
 
 
-Deleting Instance: admin-postg
+Deleting Instance: example-inst0
 
-Response:{'DBInstance': {'DBInstanceIdentifier': 'admin-postg', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting'...
-
-
-Deleting Instance: admin-pgs
-
-Response:{'DBInstance': {'DBInstanceIdentifier': 'admin-pgs', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting'...
+Response:{'DBInstance': {'DBInstanceIdentifier': 'example-inst0', 'DBInstanceClass': 'db.r5.xlarge', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting', ...
 
 
-Deleting Instance: nnn
+Deleting Instance: example-mariaDB-instance-00-dev-team
 
-Response:{'DBInstance': {'DBInstanceIdentifier': 'nnn', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting'...
-
-
-Deleting Instance: ik-adm-dbaas
-
-Response:{'DBInstance': {'DBInstanceIdentifier': 'ik-adm-dbaas', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting'...
+Response:{'DBInstance': {'DBInstanceIdentifier': 'example-mariaDB-instance-00-dev-team', 'DBInstanceClass': 'db.r5.xlarge', 'Engine': 'mariadb', 'DBInstanceStatus': 'deleting', ...
 
 
-Deleting Instance: 2k-dev-mysql
+Deleting Instance: example-mariaDB-instance-01-dev-team
 
-Response:{'DBInstance': {'DBInstanceIdentifier': '2k-dev-mysql', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'mysql', 'DBInstanceStatus': 'deleting'...
-
-
-Deleting Instance: 2k-rds-postgresq
-
-Response:{'DBInstance': {'DBInstanceIdentifier': '2k-rds-postgresq', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting'...
+Response:{'DBInstance': {'DBInstanceIdentifier': 'example-mariaDB-instance-01-dev-team', 'DBInstanceClass': 'db.r5.xlarge', 'Engine': 'mariadb', 'DBInstanceStatus': 'deleting', ...
 
 
-Deleting Instance: 2k-rds-mysql04 
+Deleting Instance: example-mySQL-instance-00-dev-team
 
-Response:{'DBInstance': {'DBInstanceIdentifier': '2k-rds-mysql04 ', 'DBInstanceClass': 'db.m6g.16xlarge', 'Engine': 'mysql', 'DBInstanceStatus': 'deleting'...
-
-
-Deleting Instance: jkl
-
-Response:{'DBInstance': {'DBInstanceIdentifier': 'jkl', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting'...
+Response:{'DBInstance': {'DBInstanceIdentifier': 'example-mySQL-instance-00-dev-team', 'DBInstanceClass': 'db.r5.xlarge', 'Engine': 'mysql', 'DBInstanceStatus': 'deleting', ...
 
 
-Deleting Instance: vvv-dev02
+Deleting Instance: example-mySQL-instance-01-dev-team
 
-Response:{'DBInstance': {'DBInstanceIdentifier': 'vvv-dev02', 'DBInstanceClass': 'db.t3.micro', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting'...
+Response:{'DBInstance': {'DBInstanceIdentifier': 'example-mySQL-instance-01-dev-team', 'DBInstanceClass': 'db.r5.xlarge', 'Engine': 'mysql', 'DBInstanceStatus': 'deleting', ...
+
+
+Deleting Instance: example-postgres-instance-00-dev-team
+
+Response:{'DBInstance': {'DBInstanceIdentifier': 'example-postgres-instance-00-dev-team', 'DBInstanceClass': 'db.r5.xlarge', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting', ...
+
+
+Deleting Instance: example-postgres-instance-01-dev-team
+
+Response:{'DBInstance': {'DBInstanceIdentifier': 'example-postgres-instance-01-dev-team', 'DBInstanceClass': 'db.r5.xlarge', 'Engine': 'postgres', 'DBInstanceStatus': 'deleting', ...
 
 
 
@@ -71,13 +58,10 @@ INSTANCES STATUS (ID's don't need to match at this point):
 
 
 ID   DBId                                                        Engine         Status         
-0    admin-postg                                                 postgres       deleting       
-1    admin-pgs                                                   postgres       deleting       
-2    nnn                                                         postgres       deleting       
-3    2k-adm-postg                                                postgres       deleting       
-4    2k-dev-mysql                                                mysql          deleting       
-5    2k-rds-postgresq                                            postgres       deleting       
-6    2k-rds-mysql04                                              mysql          deleting       
-7    jkl                                                         postgres       deleting       
-8    vvv-dev02                                                   postgres       deleting       
-9    rdsinstancetst2                                             postgres       deleting   
+0    example-inst0                                               postgres       deleting       
+1    example-mariaDB-instance-00-dev-team          				 mariadb        deleting       
+2    example-mariaDB-instance-01-dev-team          				 mariadb        deleting       
+3    example-mySQL-instance-00-dev-team            				 mysql          deleting       
+4    example-mySQL-instance-01-dev-team            				 mysql          deleting       
+5    example-postgres-instance-00-dev-team         				 postgres       deleting       
+6    example-postgres-instance-01-dev-team         				 postgres       deleting   
